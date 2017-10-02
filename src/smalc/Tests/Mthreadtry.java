@@ -19,6 +19,7 @@ public class Mthreadtry {
 			System.out.println("A");
 		}
 	}
+	
 	public static void loop2(){
 		while(true){
 			System.out.println("B");

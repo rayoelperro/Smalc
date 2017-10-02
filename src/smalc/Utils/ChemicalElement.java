@@ -121,7 +121,6 @@ public enum ChemicalElement {
     Tennessine("Tennessine", "Ts", 117, 294),
     Oganesson("Oganesson", "Og", 118, 294);
 
-
     private String name;
     private String simbol;
     private int aNumber;

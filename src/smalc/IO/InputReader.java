@@ -16,17 +16,13 @@ public class InputReader extends BufferedReader {
 		isr = new InputStreamReader(is);
 	}
 	
-	public String readToEnd(){
+	public String readToEnd() throws IOException{
 		String total = "";
 		String ln = "";
+		@SuppressWarnings("resource")
 		BufferedReader r = this;
-		try {
-			while((ln = r.readLine()) != null){
-				total += ln + "\n";
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		while((ln = r.readLine()) != null){
+			total += ln + "\n";
 		}
 		return total;
 	}
